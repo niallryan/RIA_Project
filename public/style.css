@@ -1,0 +1,54 @@
+#map {
+    width: 500px;
+    height: 500px;
+}
+
+#container {
+    background: LightGray;
+}
+
+.natural {
+    background: ivory;
+    width: 100px;
+    height: 600px;
+    border: solid 1px black;
+    display: inline-block;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sharp {
+    background: #555D50;
+    width: 50px;
+    height: 300px;
+    display: inline-block;
+    color: white;
+}
+
+.button {
+    padding: 20px;
+    margin: 20px 0 20px 0px;
+    width: 200px;
+    background: red;
+    /* http://border-radius.com/ */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* http://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/ */
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
