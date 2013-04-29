@@ -14,9 +14,9 @@ options
 var marker = new google.maps.Marker({
 	position: c,
 	map: map,
-	icon: "trebleclef.jpg"
+	icon: "/images/trebleclef.png"
 });
 
 google.maps.event.addListener(marker, 'click', function() {
-	$("#content").text("Blah blah blah.").slideDown("1000");
+	$("#content").text("Blah blah blah.").slideDown(1000);
 });

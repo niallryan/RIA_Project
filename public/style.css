@@ -52,3 +52,9 @@ ul {
     margin-top: -100px;
     margin-left: -200px;
 }
+
+#content {
+    display: none;
+    background: red;
+    height: 150px;
+}
