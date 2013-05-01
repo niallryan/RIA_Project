@@ -58,3 +58,7 @@ ul {
     background: red;
     height: 150px;
 }
+
+#try_again {
+    display: none;
+}
