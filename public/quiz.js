@@ -13,10 +13,12 @@ var check_answer = (function () {
         score++;
         if (questions.length > score) {
             show_question();
+            timer = max_timer;
         } else {
             $("#question").text("Quiz over.");
             $("#answers").empty();
-            $("#try_again").toggle();
+            $("#try_again").text("Restart the Quiz").toggle();
+            clearInterval(timer_interval);
         }
     } else {
         wrong_answer();
@@ -27,9 +29,10 @@ var check_answer = (function () {
 });
 
 var wrong_answer = (function() {
-    $("#question").text("You picked the wrong answer.");
+    $("#question").text("You picked the wrong answer or the time ran out. Bummer.");
     $("#answers").empty();
     $("#try_again").toggle();
+    clearInterval(timer_interval);
 });
 
 var show_question = (function() {
@@ -55,7 +58,22 @@ $("#try_again").on("click", function() {
     score = 0;
     show_question();
     $(this).toggle();
-})
+    timer = max_timer;
+});
+
+var max_timer = 10;
+var timer = max_timer;
+var show_timer = (function () {
+    $("#timer").text(timer);
+});
+
+var timer_interval = setInterval( function() {
+    show_timer();
+    timer--;
+    if(timer < 0) {
+        wrong_answer();
+    }
+}, 1000);
 
 show_question();
 show_score();
