@@ -1,18 +1,20 @@
-#map {
-    width: 500px;
-    height: 500px;
+body {
+    overflow: hidden;
 }
 
-#container {
-    background: LightGray;
+#menu {
+    list-style-type: none;
+    padding-top: 10px;
 }
 
 .natural {
     background: ivory;
-    width: 100px;
-    height: 600px;
+    width: 80px;
+    height: 480px;
     border: solid 1px black;
     display: inline-block;
+    position: relative;
+    text-align: center;
     -webkit-border-bottom-right-radius: 10px;
     -webkit-border-bottom-left-radius: 10px;
     -moz-border-radius-bottomright: 10px;
@@ -23,10 +25,69 @@
 
 .sharp {
     background: #555D50;
-    width: 50px;
-    height: 300px;
+    width: 40px;
+    height: 320px;
     display: inline-block;
     color: white;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+}
+
+#c_sharp {
+    left: -22px;
+}
+
+#d {
+    left: -44px;
+}
+
+#d_sharp {
+    left: -66px;
+}
+
+#e, #f {
+    left: -88px;
+}
+
+#f_sharp {
+    left: -110px;
+}
+
+#g {
+    left: -132px;
+}
+
+#g_sharp {
+    left: -154px;
+}
+
+#a {
+    left: -176px;
+}
+
+#a_sharp {
+    left: -198px;
+}
+
+#b, #c_high {
+    left: -220px;
+}
+
+.piano_position {
+    position: relative;
+    left: 40px;
+    top: 50px;
+}
+
+#controls {
+    position: relative;
+    left: 750px;
+    top: -500px;
+}
+
+.default {
+    display: none;
 }
 
 .button {
@@ -34,14 +95,11 @@
     margin: 20px 0 20px 0px;
     width: 200px;
     background: red;
+    display: inline;
     /* http://border-radius.com/ */
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-}
-
-ul {
-    list-style-type: none;
 }
 
 /* http://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/ */
@@ -53,12 +111,20 @@ ul {
     margin-left: -200px;
 }
 
-#content {
-    display: none;
-    background: red;
-    height: 150px;
-}
-
 #try_again {
     display: none;
+}
+
+#map {
+    width: 800px;
+    height: 500px;
+    margin: 25px 0 0 40px;
+}
+
+#info {
+    display: none;
+    background: red;
+    height: 50px;
+    width: 800px;
+    margin: 10px 0 0 40px;
 }

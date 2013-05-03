@@ -8,12 +8,27 @@ var questions = [
 
 var score = 0;
 
+var show_question = (function() {
+    var question = questions[score];
+
+    $("#question").text(question.text);
+
+    $("#answers").empty();
+    for (var i in question.answers) {
+        var answer = question.answers[i];
+        $("#answers").append("<li class='answer'>" + answer + "</li>");
+    }
+
+    $(".answer").on("click", check_answer);
+
+});
+
 var check_answer = (function () {
     if ($(this).text().toLowerCase() == questions[score].correct.toLowerCase()) {
         score++;
         if (questions.length > score) {
-            show_question();
             timer = max_timer;
+            show_question();
         } else {
             $("#question").text("Quiz over.");
             $("#answers").empty();
@@ -32,22 +47,7 @@ var wrong_answer = (function() {
     $("#question").text("You picked the wrong answer or the time ran out. Bummer.");
     $("#answers").empty();
     $("#try_again").toggle();
-    clearInterval(timer_interval);
-});
-
-var show_question = (function() {
-    var question = questions[score];
-
-    $("#question").text(question.text);
-
-    $("#answers").empty();
-    for (var i in question.answers) {
-        var answer = question.answers[i];
-        $("#answers").append("<li class='answer'>" + answer + "</li>");
-    }
-
-    $(".answer").on("click", check_answer);
-
+    clearInterval(timer_interval)
 });
 
 var show_score = (function () {
@@ -55,10 +55,12 @@ var show_score = (function () {
 });
 
 $("#try_again").on("click", function() {
-    score = 0;
-    show_question();
     $(this).toggle();
+    score = 0;
+    $("#score").text(score);
     timer = max_timer;
+    // timer_function();
+    show_question();
 });
 
 var max_timer = 10;
@@ -67,13 +69,15 @@ var show_timer = (function () {
     $("#timer").text(timer);
 });
 
-var timer_interval = setInterval( function() {
+var timer_function = (function() {
     show_timer();
     timer--;
     if(timer < 0) {
         wrong_answer();
     }
-}, 1000);
+});
+
+var timer_interval = setInterval(timer_function, 1000);
 
 show_question();
 show_score();

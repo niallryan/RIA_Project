@@ -19,6 +19,11 @@ $(document).ready(function() {
 
         $.get(url, function(response) {
             $("#main").html(response);
+            if (url == "piano.html") {
+                $("#main").addClass("piano_position").removeClass("quiz_position default");
+            } else if (url == "quiz.html") {
+                $("#main").addClass("quiz_position").removeClass("piano_position default");
+            }
         });
 
     });
