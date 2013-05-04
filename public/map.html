@@ -2,16 +2,14 @@
 
 	<head>
 		<link rel="stylesheet" href="style.css" />
-		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
 	</head>
 
 	<body>
 
         <div id="menu">
             <ul>
-                <li class="button"><a id="piano" class="ajax" href="piano.html">Piano</a></li>
-                <li class="button"><a id="quiz" class="ajax" href="quiz.html">Quiz</a></li>
-                <li class="button"><a id="map_link" href="map.html">Map</a></li>
+                <li class="button"><a id="home" href="index.html">Home</a></li>
             </ul>
         </div>
 
@@ -22,6 +20,12 @@
 		<div id="info">
 		
 		</div>
+
+        <div>
+            <p id="lat"></p>
+            <p id="lng"></p>
+        </div>
+
 	
 		<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
 		<script src="map_script.js"></script>

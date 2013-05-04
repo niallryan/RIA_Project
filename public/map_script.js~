@@ -76,5 +76,4 @@ google.maps.event.addListener(marker5, 'click', function() {
 
 // Get user location
 // ToDo: Get User Location
-// https://developers.google.com/maps/documentation/javascript/examples/map-geolocation?hl=en
 // navigator.geolocation.getCurrentPosition();

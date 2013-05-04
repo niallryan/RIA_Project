@@ -1,5 +1,12 @@
 body {
     overflow: hidden;
+    background: #D4EECE;
+}
+
+.welcome {
+    position: relative;
+    left: 40px;
+    top: 10px;
 }
 
 #menu {
@@ -96,6 +103,7 @@ body {
     width: 200px;
     background: red;
     display: inline;
+    position: relative;
     /* http://border-radius.com/ */
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -127,4 +135,10 @@ body {
     height: 50px;
     width: 800px;
     margin: 10px 0 0 40px;
+}
+
+.quiz_position {
+    position: relative;
+    left: 40px;
+    top: 10px;
 }
