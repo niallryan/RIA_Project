@@ -1,5 +1,8 @@
+var music = document.getElementsByTagName("audio")[0];
+
 $("#start").on("click", function() {
     $(this).toggle();
+    music.play();
 
     var questions = [
         { "text": "Question 1", "answers": ["Answer 1", "Answer 2", "Answer 3", "Answer 4", "Answer 5"], "correct": "Answer 1" },
@@ -33,6 +36,10 @@ $("#start").on("click", function() {
                 timer = max_timer;
                 show_question();
             } else {
+                // http://stackoverflow.com/questions/14834520/html5-audio-stop-function/14836099#14836099
+                music.pause();
+                music.currentTime = 0;
+                //
                 $("#question").text("Quiz over.");
                 $("#answers").empty();
                 $("#try_again").text("Restart the Quiz").toggle();
@@ -51,6 +58,8 @@ $("#start").on("click", function() {
         $("#answers").empty();
         $("#try_again").toggle();
         clearInterval(timer_interval)
+        music.pause();
+        music.currentTime = 0;
     });
 
     var show_score = (function () {
@@ -58,6 +67,7 @@ $("#start").on("click", function() {
     });
 
     $("#try_again").on("click", function() {
+        music.play();
         $(this).toggle();
         score = 0;
         $("#score").text(score);

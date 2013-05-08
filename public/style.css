@@ -90,7 +90,7 @@ body {
 #controls {
     position: relative;
     left: 750px;
-    top: -500px;
+    top: -490px;
 }
 
 .default {
@@ -118,6 +118,16 @@ body {
     margin-top: -100px;
     margin-left: -200px;
 }
+
+#start, #qna {
+    background: yellow;
+    width: 300px;
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
 
 #try_again {
     display: none;
