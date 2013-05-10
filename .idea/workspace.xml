@@ -57,7 +57,7 @@
       <file leaf-file-name="quiz.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/quiz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="77" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.39325842">
+            <state line="106" column="55" selection-start="4420" selection-end="4420" vertical-scroll-proportion="0.63242376">
               <folding />
             </state>
           </provider>
@@ -612,7 +612,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/quiz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="77" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.39325842">
+        <state line="106" column="55" selection-start="4420" selection-end="4420" vertical-scroll-proportion="0.63242376">
           <folding />
         </state>
       </provider>
