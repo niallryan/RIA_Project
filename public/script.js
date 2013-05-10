@@ -1,11 +1,3 @@
-/**
- * Created with JetBrains RubyMine.
- * User: niall
- * Date: 26/04/13
- * Time: 22:35
- * To change this template use File | Settings | File Templates.
- */
-
 $(document).ready(function() {
 
     // taken from http://stackoverflow.com/questions/7861150/jquery-fade-in-onload
@@ -27,14 +19,6 @@ $(document).ready(function() {
         });
 
     });
-
-    // $(".button").on("mouseover", function() {
-    //    $(this).animate( {
-    //        width: '200px'
-    //    }, 1000, function() {
-            // Animation complete.
-    //    });
-    //});
 
 });
 

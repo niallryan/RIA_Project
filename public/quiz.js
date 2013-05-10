@@ -1,7 +1,11 @@
 var music = document.getElementsByTagName("audio")[0];
+var applause = document.getElementsByTagName("audio")[1];
+var ahh = document.getElementsByTagName("audio")[2];
 
 $("#start").on("click", function() {
     $(this).toggle();
+    $("#qna").toggle().animate({width: "1050px"}, 1000);
+    $("#timer").css("background", "white").animate({width: "1050px"}, 1000).animate({width: "10px"}, 10000, 'linear');
     music.play();
 
     var questions = [
@@ -27,6 +31,14 @@ $("#start").on("click", function() {
 
         $(".answer").on("click", check_answer);
 
+        $(".answer").hover(
+            function() {
+                $(this).css("background", "red").animate({width: "700px"}, 2000);
+            },
+            function() {
+                $(this).css("background", "yellow").animate({width: "100px"}, 1000);
+            });
+
     });
 
     var check_answer = (function () {
@@ -39,7 +51,7 @@ $("#start").on("click", function() {
                 // http://stackoverflow.com/questions/14834520/html5-audio-stop-function/14836099#14836099
                 music.pause();
                 music.currentTime = 0;
-                //
+                applause.play();
                 $("#question").text("Quiz over.");
                 $("#answers").empty();
                 $("#try_again").text("Restart the Quiz").toggle();
@@ -60,6 +72,7 @@ $("#start").on("click", function() {
         clearInterval(timer_interval)
         music.pause();
         music.currentTime = 0;
+        ahh.play();
     });
 
     var show_score = (function () {
@@ -67,6 +80,10 @@ $("#start").on("click", function() {
     });
 
     $("#try_again").on("click", function() {
+        ahh.pause();
+        ahh.currentTime = 0;
+        applause.pause();
+        applause.currentTime = 0;
         music.play();
         $(this).toggle();
         score = 0;
@@ -95,4 +112,3 @@ $("#start").on("click", function() {
     show_question();
     show_score();
 });
-

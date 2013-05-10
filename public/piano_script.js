@@ -114,7 +114,7 @@ $("#c_high").mousedown(function () {
 
 // Keypress
 
-$("html").on("keydown", function(e) {
+$(document).on("keydown", function(e) {
 
     var pressed_key = e.which;
 
@@ -189,6 +189,28 @@ $("html").on("keydown", function(e) {
     }
 
 }).on("keyup",function() {
-        $(".natural").css("background", "ivory");
-        $(".sharp").css("background", "#555D50");
-    });
+    $(".natural").css("background", "ivory");
+    $(".sharp").css("background", "#555D50");
+});
+
+/* var sequence = [65, 65, 71, 71, 72, 72, 71, 70, 70, 68, 68, 83, 83, 65];
+var pressed = [];
+
+$(document).on("keydown", function(e) {
+    var keyToAdd = e.which;
+
+    pressed.push(keyToAdd);
+
+});
+
+var test = (function() {
+
+    if (pressed == sequence) {
+        alert("hooray");
+        pressed = [];
+    }
+});
+
+test();
+
+*/
