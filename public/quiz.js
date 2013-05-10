@@ -4,7 +4,7 @@ var ahh = document.getElementsByTagName("audio")[2];
 
 $("#start").on("click", function() {
     $(this).toggle();
-    $("#qna").toggle().animate({width: "1050px"}, 1000);
+    $("#qna").toggle().animate({width: "1050px", height: "500px"}, 1000);
     $("#timer").css("background", "white").animate({width: "1050px"}, 1000).animate({width: "10px"}, 10000, 'linear');
     music.play();
 
@@ -33,10 +33,12 @@ $("#start").on("click", function() {
 
         $(".answer").hover(
             function() {
-                $(this).css("background", "red").animate({width: "700px"}, 2000);
+                $(this).stop();
+                $(this).css("background", "red").animate({padding: "20px"}, 350);
             },
             function() {
-                $(this).css("background", "yellow").animate({width: "100px"}, 1000);
+                $(this).stop();
+                $(this).css("background", "yellow").animate({padding: "10px"}, 200);
             });
 
     });
@@ -47,11 +49,14 @@ $("#start").on("click", function() {
             if (questions.length > score) {
                 timer = max_timer;
                 show_question();
+                $("#timer").stop();
+                $("#timer").css("width", "1050px").delay(500).animate({width: "10px"}, 10000, 'linear');
             } else {
                 // http://stackoverflow.com/questions/14834520/html5-audio-stop-function/14836099#14836099
                 music.pause();
                 music.currentTime = 0;
                 applause.play();
+                $("#timer").stop();
                 $("#question").text("Quiz over.");
                 $("#answers").empty();
                 $("#try_again").text("Restart the Quiz").toggle();
@@ -72,7 +77,9 @@ $("#start").on("click", function() {
         clearInterval(timer_interval)
         music.pause();
         music.currentTime = 0;
+        $("#timer").stop();
         ahh.play();
+
     });
 
     var show_score = (function () {
@@ -90,6 +97,7 @@ $("#start").on("click", function() {
         $("#score").text(score);
         timer = max_timer;
         timer_interval = setInterval(timer_function, 1000);
+        $("#timer").css("width", "1050px").delay(1000).animate({width: "10px"}, 10000, 'linear');
         show_question();
     });
 

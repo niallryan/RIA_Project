@@ -9,10 +9,10 @@
     <file path="/map.html" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1367666897184" ignored="false" />
     <file path="/piano.html" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368027086642" ignored="false" />
     <file path="/script.js" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368195736811" ignored="false" />
-    <file path="/style.css" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368205295245" ignored="false" />
+    <file path="/style.css" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368210971766" ignored="false" />
     <file path="/routes.rb" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1367184977764" ignored="false" />
     <file path="/map_script.js" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368198515962" ignored="false" />
-    <file path="/quiz.js" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368205415446" ignored="false" />
+    <file path="/quiz.js" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368211015878" ignored="false" />
     <file path="/quiz.html" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368178904925" ignored="false" />
     <file path="/piano_script.js" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368197473128" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,7 +57,7 @@
       <file leaf-file-name="quiz.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/quiz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="115" selection-start="398" selection-end="398" vertical-scroll-proportion="0.16853933">
+            <state line="36" column="77" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.39325842">
               <folding />
             </state>
           </provider>
@@ -66,7 +66,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="18" selection-start="2447" selection-end="2447" vertical-scroll-proportion="-17.266666">
+            <state line="133" column="53" selection-start="1976" selection-end="1976" vertical-scroll-proportion="-3.7333333">
               <folding />
             </state>
           </provider>
@@ -605,14 +605,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="18" selection-start="2447" selection-end="2447" vertical-scroll-proportion="-17.266666">
+        <state line="133" column="53" selection-start="1976" selection-end="1976" vertical-scroll-proportion="-3.7333333">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/quiz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="115" selection-start="398" selection-end="398" vertical-scroll-proportion="0.16853933">
+        <state line="36" column="77" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.39325842">
           <folding />
         </state>
       </provider>
