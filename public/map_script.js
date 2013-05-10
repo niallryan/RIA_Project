@@ -15,12 +15,14 @@ var carlow = new google.maps.LatLng(52.836529, -6.909971);
 var belfast = new google.maps.LatLng(54.596235, -5.883522);
 var cork = new google.maps.LatLng(51.892067, -8.481445);
 
+// Geolocation
+
 var browserSupportFlag =  new Boolean();
 
 function start() {
 
     var options = {
-        zoom: 14,
+        zoom: 12,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
@@ -120,7 +122,6 @@ function start() {
     });
 
     // Marker Click Events
-    // ToDO: DRY this up.
 
     google.maps.event.addListener(marker1, 'click', function() {
         $("#info").text("Rathmines Piano School, Rathmines.").slideDown(1000);
@@ -143,27 +144,27 @@ function start() {
     });
 
     google.maps.event.addListener(marker6, 'click', function() {
-        $("#info").text("Dummy Text").slideDown(1000);
+        $("#info").text("Galway School of Music.").slideDown(1000);
     });
 
     google.maps.event.addListener(marker7, 'click', function() {
-        $("#info").text("Dummy Text").slideDown(1000);
+        $("#info").text("Limerick Piano Centre.").slideDown(1000);
     });
 
     google.maps.event.addListener(marker8, 'click', function() {
-        $("#info").text("Dummy Text").slideDown(1000);
+        $("#info").text("Waterford College of Music Education.").slideDown(1000);
     });
 
     google.maps.event.addListener(marker9, 'click', function() {
-        $("#info").text("Dummy Text").slideDown(1000);
+        $("#info").text("Carlow Piano Tutor, O' Brien Road, Carlow.").slideDown(1000);
     });
 
     google.maps.event.addListener(marker10, 'click', function() {
-        $("#info").text("Dummy Text").slideDown(1000);
+        $("#info").text("Belfast School of Piano.").slideDown(1000);
     });
 
     google.maps.event.addListener(marker11, 'click', function() {
-        $("#info").text("Dummy Text").slideDown(1000);
+        $("#info").text("Cork Piano School.").slideDown(1000);
     });
 
 };

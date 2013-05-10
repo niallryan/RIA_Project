@@ -104,10 +104,33 @@ body {
     background: red;
     display: inline;
     position: relative;
+    text-align: center;
+    font-size: large;
     /* http://border-radius.com/ */
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
+}
+
+.button a:link, .button a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.button a:hover {
+    background: white;
+    color: red;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+
+}
+
+.button a:active {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
 
 /* http://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/ */
@@ -123,6 +146,7 @@ body {
     background: yellow;
     width: 300px;
     padding: 10px;
+    text-align: center;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -144,6 +168,7 @@ body {
 }
 
 .answer {
+    border: solid 2px red;
     margin: 10px;
     padding: 10px;
     -webkit-border-radius: 10px;
@@ -153,6 +178,17 @@ body {
 
 #try_again {
     display: none;
+    padding: 5px;
+    background: red;
+    position: relative;
+    width: 200px;
+    margin: 5px 0 5px 0;
+    text-align: center;
+    color: white;
+    font-size: large;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
 
 #map {
@@ -178,4 +214,12 @@ body {
 
 #timer {
     width: 0px;
+    border: solid 2px red;
+    padding: 2px 0 2px 5px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }

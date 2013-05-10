@@ -9,11 +9,11 @@
     <file path="/map.html" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1367666897184" ignored="false" />
     <file path="/piano.html" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368027086642" ignored="false" />
     <file path="/script.js" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368195736811" ignored="false" />
-    <file path="/style.css" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368210971766" ignored="false" />
+    <file path="/style.css" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368221763698" ignored="false" />
     <file path="/routes.rb" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1367184977764" ignored="false" />
     <file path="/map_script.js" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368198515962" ignored="false" />
-    <file path="/quiz.js" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368211015878" ignored="false" />
-    <file path="/quiz.html" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368178904925" ignored="false" />
+    <file path="/quiz.js" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368221425701" ignored="false" />
+    <file path="/quiz.html" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368221536081" ignored="false" />
     <file path="/piano_script.js" changelist="d9ca2c42-b7ca-4d2e-8a0d-4c55ba54f5a3" time="1368197473128" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,19 +45,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map_script.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="map_script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/map_script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="23" selection-start="1919" selection-end="1919" vertical-scroll-proportion="0.0">
+            <state line="158" column="67" selection-start="4797" selection-end="4797" vertical-scroll-proportion="0.49438202">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quiz.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="quiz.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/quiz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="55" selection-start="4420" selection-end="4420" vertical-scroll-proportion="0.63242376">
+            <state line="64" column="69" selection-start="3257" selection-end="3257" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,7 +66,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="53" selection-start="1976" selection-end="1976" vertical-scroll-proportion="-3.7333333">
+            <state line="148" column="22" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,7 +75,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="64" selection-start="455" selection-end="455" vertical-scroll-proportion="-11.25">
+            <state line="18" column="64" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,7 +84,7 @@
       <file leaf-file-name="quiz.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/quiz.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="78" selection-start="592" selection-end="592" vertical-scroll-proportion="-23.125">
+            <state line="30" column="72" selection-start="460" selection-end="460" vertical-scroll-proportion="-10.583333">
               <folding />
             </state>
           </provider>
@@ -93,7 +93,7 @@
       <file leaf-file-name="piano.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/piano.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="12" selection-start="3060" selection-end="3179" vertical-scroll-proportion="-17.458334">
+            <state line="106" column="12" selection-start="3060" selection-end="3179" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,12 +132,12 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/map.html" />
         <option value="$PROJECT_DIR$/public/piano.html" />
-        <option value="$PROJECT_DIR$/public/quiz.html" />
         <option value="$PROJECT_DIR$/public/script.js" />
         <option value="$PROJECT_DIR$/public/piano_script.js" />
-        <option value="$PROJECT_DIR$/public/map_script.js" />
-        <option value="$PROJECT_DIR$/public/style.css" />
+        <option value="$PROJECT_DIR$/public/quiz.html" />
         <option value="$PROJECT_DIR$/public/quiz.js" />
+        <option value="$PROJECT_DIR$/public/style.css" />
+        <option value="$PROJECT_DIR$/public/map_script.js" />
       </list>
     </option>
   </component>
@@ -554,13 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="49" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -570,14 +563,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="64" selection-start="455" selection-end="455" vertical-scroll-proportion="-11.25">
+        <state line="18" column="64" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/piano.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="12" selection-start="3060" selection-end="3179" vertical-scroll-proportion="-17.458334">
+        <state line="106" column="12" selection-start="3060" selection-end="3179" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -589,30 +582,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/map_script.js">
+    <entry file="file://$PROJECT_DIR$/public/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="23" selection-start="1919" selection-end="1919" vertical-scroll-proportion="0.0">
+        <state line="14" column="49" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/quiz.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="78" selection-start="592" selection-end="592" vertical-scroll-proportion="-23.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="53" selection-start="1976" selection-end="1976" vertical-scroll-proportion="-3.7333333">
+        <state line="30" column="72" selection-start="460" selection-end="460" vertical-scroll-proportion="-10.583333">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/quiz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="55" selection-start="4420" selection-end="4420" vertical-scroll-proportion="0.63242376">
+        <state line="64" column="69" selection-start="3257" selection-end="3257" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="22" selection-start="2231" selection-end="2231" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/map_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="158" column="67" selection-start="4797" selection-end="4797" vertical-scroll-proportion="0.49438202">
           <folding />
         </state>
       </provider>

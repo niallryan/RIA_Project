@@ -62,7 +62,7 @@ $("#start").on("click", function() {
                 music.currentTime = 0;
                 applause.play();
                 $("#timer").stop();
-                $("#question").text("Quiz over.");
+                $("#question").text("Way to go, you got 10 out of 10!");
                 $("#answers").empty();
                 $("#qna").animate({height: "50px"}, 1000);
                 $("#try_again").text("Restart the Quiz").toggle();
